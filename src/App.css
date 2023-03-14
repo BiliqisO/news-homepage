@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+.nav-list > li {
+  list-style: none;
+  color: hsl(236, 13%, 42%);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+.main {
+  display: flex;
+  gap: 10px;
+  padding: 0px 100px;
+  justify-content: space-between;
+}
+.right {
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  width: 35%;
+  padding: 40px;
+}
+.left > img {
+  width: 100%;
+}
+.left {
+  width: 60%;
+}
+.right-item {
+  padding: 20px 0px;
+  margin-bottom: 10px;
+}
+.head {
+  padding-bottom: 10px;
+}
+.right-item > p {
+  padding-bottom: 25px;
+}
+.bottom {
+  display: flex;
+  gap: 10%;
+  margin-top: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.b-right > p {
+  color: hsl(236, 13%, 42%);
+}
+.b-left {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.b-left,
+.b-right {
+  width: 45%;
+}
+.btn {
+  background: hsl(5, 85%, 63%);
+  color: white;
+  font-weight: 700;
+  padding: 15px 20px;
+  border: none;
+  margin-top: 60px;
+}
+.foot {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+.foot-image {
+  width: 150px;
+  height: 200px;
+}
+.r-foot {
+  padding-left: 20px;
+}
+.r-foot > p {
+  color: hsl(236, 13%, 42%);
+  padding: 15px 0;
+}
+.r-foot > h1 {
+  color: hsl(233, 8%, 79%);
+  padding: 15px 0;
+}
+.right > h1 {
+  color: hsl(35, 77%, 62%);
+  font-weight: 700;
+  font-size: 3rem;
+}
+.menu {
+  display: none;
+}
+.menu-close {
+  display: none;
+}
+@media only screen and (max-width: 865px) {
+  .menu {
+    display: block;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+  }
+  .menu-close {
+    display: none;
+    margin-top: 5px;
+    margin-right: 0px;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+  }
+  .nav-list {
+    display: inline;
+    display: none;
+    background: white;
+    height: 400px;
+    position: absolute;
+    width: 80%;
+    right: 0px;
+    padding: 20px 10px;
+    font-size: 2rem;
+    border: 1px solid black;
+  }
+  .navbar {
+    height: 150px;
+    padding: 55px 10px;
+    position: relative;
+  }
+  .nav-list > li {
+    color: black;
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    padding-bottom: 20px;
+  }
+  .right {
+    z-index: -90;
+  }
+  .main {
+    width: 100%;
+    padding: 0px;
+    flex-wrap: wrap;
+  }
+  .right,
+  .left,
+  .b-left,
+  .b-right,
+  .foot{
+    width: 100%;
+    margin-left: 0;
+
+  }
+  .footer {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+  }
+}
